@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2544"
+    tools:context=".presentation.info_screen.InfoActivity"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="10sp"
+            android:background="@drawable/back"
+            android:backgroundTint="@color/white">
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+        <TextView
+            android:id="@+id/food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="Info Quizy"
+            android:fontFamily="@font/f"
+            android:textSize="25dp">
+
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#FE8F51"
+            android:layout_gravity="bottom"
+            />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/pos_image"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/brain_smile"
+                android:layout_gravity="center">
+            </ImageView>
+            <TextView
+                android:id="@+id/text_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/info"
+                android:padding="20dp"
+                android:justificationMode="inter_word">
+
+            </TextView>
+            <TextView
+                android:id="@+id/text_pos2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/info2"
+                android:padding="20dp"
+                android:justificationMode="inter_word">
+
+            </TextView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
